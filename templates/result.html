@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;
+       position: absolute;
+  left: 28%;
+  top: 45%;
+ font-size: 250%;
+}
+</style>
+</head>
+
+   <body>
+<center>
+
+<h1 id="MyEdit">
+    This text will change
+</h1>
+
+<script>
+   emp= '{{employee_id}}';
+   key= '{{result[0]}}';
+   
+  if(key==1)
+  {
+  document.getElementById("MyEdit").innerHTML = " Employee  "+emp+" expected to Left"
+  }
+  else{
+  
+  document.getElementById("MyEdit").innerHTML = "Employee  "+emp+" Continues in the Organization ";
+  }
+
+
+
+
+<!-- document.write(key); -->
+</script>
+   <!--  <font size="50">{{result[0]}}</font> -->
+</center>   
+   </body>
+</html>
